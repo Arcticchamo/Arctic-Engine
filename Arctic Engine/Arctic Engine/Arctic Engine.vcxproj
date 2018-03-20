@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Sources\Audio.cpp" />
+    <ClCompile Include="Sources\Barrel.cpp" />
+    <ClCompile Include="Sources\Bounds.cpp" />
+    <ClCompile Include="Sources\BoxCollider.cpp" />
+    <ClCompile Include="Sources\Component.cpp" />
+    <ClCompile Include="Sources\Cube.cpp" />
+    <ClCompile Include="Sources\CustomMotionState.cpp" />
+    <ClCompile Include="Sources\DebugDrawer.cpp" />
+    <ClCompile Include="Sources\Engine_Core.cpp" />
+    <ClCompile Include="Sources\Floor.cpp" />
+    <ClCompile Include="Sources\GameObject.cpp" />
+    <ClCompile Include="Sources\Input.cpp" />
+    <ClCompile Include="Sources\Light.cpp" />
+    <ClCompile Include="Sources\Lighting.cpp" />
+    <ClCompile Include="Sources\Main.cpp" />
+    <ClCompile Include="Sources\MeshRenderer.cpp" />
+    <ClCompile Include="Sources\OBJLoader.cpp" />
+    <ClCompile Include="Sources\Physics.cpp" />
+    <ClCompile Include="Sources\Player.cpp" />
+    <ClCompile Include="Sources\Resources.cpp" />
+    <ClCompile Include="Sources\SDL.cpp" />
+    <ClCompile Include="Sources\SkyBox.cpp" />
+    <ClCompile Include="Sources\Time.cpp" />
+    <ClCompile Include="Sources\Transform.cpp" />
+    <ClCompile Include="Sources\Wheel.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Headers\Audio.h" />
+    <ClInclude Include="Headers\Barrel.h" />
+    <ClInclude Include="Headers\Bounds.h" />
+    <ClInclude Include="Headers\BoxCollider.h" />
+    <ClInclude Include="Headers\Component.h" />
+    <ClInclude Include="Headers\Cube.h" />
+    <ClInclude Include="Headers\CustomMotionState.h" />
+    <ClInclude Include="Headers\DebugDrawer.h" />
+    <ClInclude Include="Headers\Engine_Core.h" />
+    <ClInclude Include="Headers\Floor.h" />
+    <ClInclude Include="Headers\GameObject.h" />
+    <ClInclude Include="Headers\Global.h" />
+    <ClInclude Include="Headers\Input.h" />
+    <ClInclude Include="Headers\Light.h" />
+    <ClInclude Include="Headers\Lighting.h" />
+    <ClInclude Include="Headers\MeshRenderer.h" />
+    <ClInclude Include="Headers\Objects.h" />
+    <ClInclude Include="Headers\OBJLoader.h" />
+    <ClInclude Include="Headers\Physics.h" />
+    <ClInclude Include="Headers\Player.h" />
+    <ClInclude Include="Headers\Resources.h" />
+    <ClInclude Include="Headers\SDL.h" />
+    <ClInclude Include="Headers\SkyBox.h" />
+    <ClInclude Include="Headers\Time.h" />
+    <ClInclude Include="Headers\Transform.h" />
+    <ClInclude Include="Headers\Wheel.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Assets\Materials\barrel1.txt" />
+    <Text Include="Assets\Materials\barrel2.txt" />
+    <Text Include="Assets\Materials\barrel3.txt" />
+    <Text Include="Assets\Materials\car.txt" />
+    <Text Include="Assets\Materials\cube.txt" />
+    <Text Include="Assets\Materials\hamster.txt" />
+    <Text Include="Assets\Materials\leftwheelcar.txt" />
+    <Text Include="Assets\Materials\rightwheelcar.txt" />
+    <Text Include="Assets\Materials\sphere.txt" />
+    <Text Include="Assets\Objects\barrel1.txt" />
+    <Text Include="Assets\Objects\barrel2.txt" />
+    <Text Include="Assets\Objects\barrel3.txt" />
+    <Text Include="Assets\Objects\car.txt" />
+    <Text Include="Assets\Objects\cube.txt" />
+    <Text Include="Assets\Objects\hamster.txt" />
+    <Text Include="Assets\Objects\leftwheelcar.txt" />
+    <Text Include="Assets\Objects\rightwheelcar.txt" />
+    <Text Include="Assets\Objects\sphere.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Shaders\frag\objShader.frag" />
+    <None Include="Assets\Shaders\vert\objShader.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Assets\Textures\Barrel1Texture.jpg" />
+    <Image Include="Assets\Textures\Barrel2Texture.jpg" />
+    <Image Include="Assets\Textures\Barrel3Texture.jpg" />
+    <Image Include="Assets\Textures\carTexture.jpg" />
+    <Image Include="Assets\Textures\cubeTexture.jpg" />
+    <Image Include="Assets\Textures\floorTexture.jpg" />
+    <Image Include="Assets\Textures\hamsterTexture.jpg" />
+    <Image Include="Assets\Textures\leftwheelcarTexture.jpg" />
+    <Image Include="Assets\Textures\rightwheelcarTexture.jpg" />
+    <Image Include="Assets\Textures\skyboxTexture.jpg" />
+    <Image Include="Assets\Textures\sphereTexture.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="Assets\bgm\bgm.wav" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C9FABCB1-827C-4DC6-A3C3-8BAACB3887AD}</ProjectGuid>
+    <RootNamespace>ArcticEngine</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)Deps/include/;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Deps/lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>
+      </AdditionalLibraryDirectories>
+      <AdditionalDependencies>BulletCollision_debug.lib;BulletDynamics_debug.lib;LinearMath_debug.lib;SDL2.lib;SDL2main.lib;opengl32.lib;glew32.lib;glew32s.lib;SDL2_image.lib;openal.lib;SDL2_mixer.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
